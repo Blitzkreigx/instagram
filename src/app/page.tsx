@@ -1,11 +1,12 @@
 import FollowedStories from '@/components/following'
 import User from '@/components/users'
-import Publication from '@/components/publication'
+import Publication from '@/components/publications'
+import ThreadPublicaton from '@/components/threads'
 import DotsMobileStepper from '@/components/carousel'
 
 export default function Home() {
   return (
-    <main className="bg-black text-white text-[13px] w-full lg:flex h-screen overflow-hidden">
+    <main className="bg-black text-white text-[13px] w-full lg:flex h-auto lg:h-screen overflow-hidden">
       <div className='lg:hidden'>
         <div className="flex justify-between items-center p-[10px]">
           <div className="flex justify-center items-center cursor-pointer relative">
@@ -89,6 +90,22 @@ export default function Home() {
           <div className='px-[30px] py-[20px] lg:py-[10px]'>
             <Publication />
             <Publication />
+            <div className="max-w-[450px] mx-auto">
+                <div className="flex justify-between items-center">
+                    <div className="flex justify-center items-center gap-[5px]">
+                        <div className="w-[35px] h-[35px] rounded-full border-[1px] border-zinc-800 flex justify-center items-center">
+                            <img src="/brand-threads.svg" alt="treads" />
+                        </div>
+                        <p className="font-bold">Threads</p>
+                    </div>
+                    <a href="" className="text-blue-800">Open Threads</a>
+                </div>
+                <div className="flex gap-[25px] overflow-hidden">
+                  <ThreadPublicaton />
+                  <ThreadPublicaton />
+                </div>
+                <hr className="my-[15px] border-zinc-800" />
+            </div>
             <Publication />
           </div>
         </div>
@@ -114,6 +131,7 @@ export default function Home() {
               <a href=''>See All</a>
             </div>
             <div className='flex flex-col gap-[10px]'>
+              <User/>
               <User/>
               <User/>
               <User/>
@@ -147,7 +165,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-around items-center absolute bottom-0 w-full bg-black py-[10px] lg:hidden">
+      <div className="flex justify-around items-center fixed bottom-0 w-full bg-black py-[10px] lg:hidden">
         <a href=''>
           <img src="/home.svg" alt="home" />
         </a>
