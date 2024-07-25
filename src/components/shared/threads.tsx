@@ -1,7 +1,7 @@
 export default function ThreadPublicaton () {
     return (
         <>
-            <div className="flex flex-col gap-[10px] border-[1px] border-zinc-800 rounded-[10px] p-[15px] min-w-[400px] min-h-[180px] my-[25px] mx-auto">
+            <div className="flex flex-col gap-[10px] border-[1px] border-zinc-800 rounded-[10px] p-[15px] min-w-[330px] md:min-w-[400px] md:min-h-[180px] my-[25px] mx-auto">
                 <div className="flex justify-between items-center">
                     <div className="flex justify-center items-center gap-[5px]">
                         <div className="w-[35px] h-[35px] rounded-full bg-zinc-900">

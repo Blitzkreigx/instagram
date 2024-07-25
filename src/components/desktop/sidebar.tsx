@@ -15,20 +15,20 @@ export default function SideBarDesktop () {
                                 <p className="text-secondary">daniel hidalgo</p>
                             </div>
                         </div>
-                        <button className="text-links">Switch</button>
+                        <button className="text-links hover:text-primary">Switch</button>
                     </div>
                 </div>
                 <div className='max-w-[80%] mx-auto mt-[25px] mb-[50px]'>
                     <div className='flex justify-between items-center py-[10px]'>
-                    <p className="text-secondary">Suggested for you</p>
-                    <a href=''>See All</a>
+                        <p className="text-secondary">Suggested for you</p>
+                        <a href='' className="hover:text-secondary">See All</a>
                     </div>
                     <div className='flex flex-col gap-[10px]'>
-                    <User/>
-                    <User/>
-                    <User/>
-                    <User/>
-                    <User/>
+                        <User/>
+                        <User/>
+                        <User/>
+                        <User/>
+                        <User/>
                     </div>
                 </div>
                 <div className='max-w-[80%] mx-auto text-secondary text-[12px]'>

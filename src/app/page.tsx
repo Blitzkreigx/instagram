@@ -1,7 +1,7 @@
 import NavBarDesktop from '@/components/desktop/navbar';
 import SideBarDesktop from '@/components/desktop/sidebar';
-import BottomNavBarMovil from '@/components/movil/bottom-navbar';
 import TopNavBarMovil from '@/components/movil/top-navbar';
+import BottomNavBarMovil from '@/components/movil/bottom-navbar';
 import Publication from '@/components/shared/publications'
 import ThreadPublicaton from '@/components/shared/threads'
 import Stories from '@/components/shared/stories'
@@ -15,7 +15,7 @@ export default function Home() {
 
       <div className='lg:w-[82%] lg:flex lg:overflow-y-scroll'>
         <div className='lg:w-[65%]'>
-          <div className='flex items-center gap-[10px] w-auto overflow-hidden lg:p-[30px] xl:justify-center'>
+          <div className='flex items-center gap-[10px] w-auto overflow-hidden lg:p-[30px] md:justify-center lg:justify-start xl:justify-center'>
             <Stories />
             <Stories />
             <Stories />
